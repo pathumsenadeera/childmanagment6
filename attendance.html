@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Child Care Facility Management System</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Child Care Facility Management System</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="signup.html">Child Registration</a></li>
+                <li><a href="attendance.html">Attendance Tracking</a></li>
+                <li><a href="#staff">Staff Management</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="attendance" class="content">
+        <div class="container">
+            <h2>Attendance Tracking</h2>
+            <div id="attendanceForm">
+                <label for="childName">Child Name:</label>
+                <input type="text" id="childName" placeholder="Enter child's name">
+
+                <label for="attendanceStatus">Attendance Status:</label>
+                <select id="attendanceStatus">
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+
+                <button onclick="markAttendance()">Submit</button>
+            </div>
+
+            <h2>Attendance History</h2>
+            <ul id="attendanceHistory"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Child Care Facility Management System</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
